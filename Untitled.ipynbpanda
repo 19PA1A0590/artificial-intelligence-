@@ -1,0 +1,76 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNed6ibrfl4vuDKqy+D8mFX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/19PA1A0590/artificial-intelligence-/blob/master/Untitled.ipynbpanda\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0XdjpxWMGuMU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 383
+        },
+        "outputId": "95cf6b28-8df6-415c-d013-8fa5ee59c349"
+      },
+      "source": [
+        "import pandas as pd\n",
+        "iris=pd.read_csv(\"https://raw.githubusercontent.com/bhargav23/Dataset/master/Iris_data_sample.csv\",index_col=0)\n",
+        "print(iris)\n",
+        "iris=iris.head(5)\n",
+        "print(iris)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "    SepalLengthCm  SepalWidthCm PetalLengthCm  PetalWidthCm         Species\n",
+            "1             5.1           3.5           1.4           0.2     Iris-setosa\n",
+            "2             4.9           NaN           1.4           0.2             NaN\n",
+            "3             4.7           3.2           1.3           0.2     Iris-setosa\n",
+            "4              ??           3.1           1.5           0.2     Iris-setosa\n",
+            "5               5           3.6           ###           0.2     Iris-setosa\n",
+            "..            ...           ...           ...           ...             ...\n",
+            "146           6.7           3.0           5.2           2.3  Iris-virginica\n",
+            "147           6.3           2.5             5           1.9  Iris-virginica\n",
+            "148           6.5           3.0           5.2           2.0  Iris-virginica\n",
+            "149           6.2           3.4           5.4           2.3  Iris-virginica\n",
+            "150           5.9           3.0           5.1           1.8  Iris-virginica\n",
+            "\n",
+            "[150 rows x 5 columns]\n",
+            "  SepalLengthCm  SepalWidthCm PetalLengthCm  PetalWidthCm      Species\n",
+            "1           5.1           3.5           1.4           0.2  Iris-setosa\n",
+            "2           4.9           NaN           1.4           0.2          NaN\n",
+            "3           4.7           3.2           1.3           0.2  Iris-setosa\n",
+            "4            ??           3.1           1.5           0.2  Iris-setosa\n",
+            "5             5           3.6           ###           0.2  Iris-setosa\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
